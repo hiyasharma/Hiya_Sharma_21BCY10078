@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+#game-container {
+    text-align: center;
+    width: 700px; /* Adjust width to fit the grid and other elements */
+    padding: 80px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center container horizontally */
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#character-selection {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#character-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.character-option {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.character-option.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#move-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#game-board-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 0;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.cell {
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell[data-player="A"] {
+    background-color: lightblue;
+}
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0; /* Added top and bottom margins */
+    padding: 0; /* Ensure no padding affects visibility */
+    text-align: center; /* Center align heading */
+}
+
+.cell[data-player="B"] {
+    background-color: lightcoral;
+}
+
+#removed-characters {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+#removed-characters h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#removedList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#removedList li {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#removedList li:last-child {
+    border-bottom: none;
+}
