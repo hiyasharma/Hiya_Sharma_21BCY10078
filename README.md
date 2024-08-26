@@ -1,4 +1,6 @@
 *Battle Of The Grid*
+
+
 Battle Of The Grid is a web-based, turn-based strategy game similar to chess, but played on a 5x5 grid. Players can choose from different characters and move them around the grid to battle opponents. The game features real-time updates and a dynamic interface for character selection and move execution.
 
 *Table of Contents*
