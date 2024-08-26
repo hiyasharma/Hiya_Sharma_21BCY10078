@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Of The Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Battle Of The Grid</h1>
+
+        <!-- Character Selection and Move Section -->
+        <div id="character-selection">
+            <h1> </h1>
+            <h1>Battle Of The Grid</h1>
+            <div id="character-options">
+                <!-- Character options will be dynamically populated here -->
+            </div>
+            <div id="move-buttons">
+                <button onclick="sendMove('L')">Left</button>
+                <button onclick="sendMove('R')">Right</button>
+                <button onclick="sendMove('F')">Forward</button>
+                <button onclick="sendMove('B')">Backward</button>
+                <button onclick="sendMove('FL')">Forward-Left</button>
+                <button onclick="sendMove('FR')">Forward-Right</button>
+                <button onclick="sendMove('BL')">Backward-Left</button>
+                <button onclick="sendMove('BR')">Backward-Right</button>
+            </div>
+        </div>
+
+        <!-- Game Board Section -->
+        <div id="game-board-container">
+            <div id="board"></div>
+        </div>
+
+        <!-- Status Display Section -->
+        <div id="status">Waiting for game to start...</div>
+
+        <!-- Move History Section -->
+        <div id="moveHistory" style="margin-top: 20px; border: 1px solid #ddd; padding: 10px;">
+            <h2>Move History</h2>
+        </div>
+        
+        <!-- Removed Characters Display Section -->
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
