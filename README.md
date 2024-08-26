@@ -16,6 +16,8 @@ Battle Of The Grid is a web-based, turn-based strategy game similar to chess, bu
 -Real-Time Updates: Move updates and game status are synchronized via WebSocket.
 -Move History: Displays a history of moves made during the game.
 -Removed Characters: Shows characters that have been removed from play.
+![image](https://github.com/user-attachments/assets/54885386-084a-4bc5-b7b3-cd6e1e5e5044)
+![image](https://github.com/user-attachments/assets/5c56b895-682a-43c3-95f4-e118c7c0e4dc)
 
 *Installation*
 1.Clone the Repository
